@@ -1,0 +1,4 @@
+apiVersion = "agentic-engineer/v1"
+name = "todo-webapp-authentication-7"
+createdAt = "2026-09-18T12:31:53Z"
+idea = "todo webapp with authentication. the user's todo entries should be persisted in a db"
