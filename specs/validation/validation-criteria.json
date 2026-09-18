@@ -1,0 +1,61 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "A user can sign in through single sign-on to get a private, secure account",
+      "stories": [1],
+      "criteria": [
+        { "id": "AC-001-a", "must": "An unauthenticated visitor is redirected to the sign-in page when opening the app", "method": "e2e" },
+        { "id": "AC-001-b", "must": "After signing in, the user lands on their own todo list", "method": "e2e" },
+        { "id": "AC-001-c", "must": "A signed-in user cannot see another user's todo items", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "statement": "A user can add a todo item with a title and an optional due date",
+      "stories": [2],
+      "criteria": [
+        { "id": "AC-002-a", "must": "Submitting a new todo item with only a title succeeds", "method": "e2e" },
+        { "id": "AC-002-b", "must": "Submitting a new todo item with a title and a due date saves both fields", "method": "e2e" },
+        { "id": "AC-002-c", "must": "A newly added todo item appears in the user's todo list", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-003",
+      "statement": "A user can see the list of their todo items, both outstanding and done",
+      "stories": [3],
+      "criteria": [
+        { "id": "AC-003-a", "must": "The todo list shows every todo item belonging to the signed-in user", "method": "e2e" },
+        { "id": "AC-003-b", "must": "Each listed todo item shows its title, due date (if any), and done/not-done status", "method": "e2e" },
+        { "id": "AC-003-c", "must": "The todo list persists across sign-out and sign-in, and across devices", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "statement": "A user can mark a todo item as done or not done",
+      "stories": [4],
+      "criteria": [
+        { "id": "AC-004-a", "must": "Marking an outstanding todo item as done updates its status", "method": "e2e" },
+        { "id": "AC-004-b", "must": "Marking a done todo item as not done reverts its status", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-005",
+      "statement": "A user can edit a todo item's title or due date",
+      "stories": [5],
+      "criteria": [
+        { "id": "AC-005-a", "must": "Changing a todo item's title saves the new title", "method": "e2e" },
+        { "id": "AC-005-b", "must": "Changing a todo item's due date saves the new due date", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-006",
+      "statement": "A user can delete a todo item",
+      "stories": [6],
+      "criteria": [
+        { "id": "AC-006-a", "must": "Deleting a todo item removes it from the user's todo list", "method": "e2e" },
+        { "id": "AC-006-b", "must": "A deleted todo item does not reappear after refreshing or signing in again", "method": "e2e" }
+      ]
+    }
+  ]
+}
