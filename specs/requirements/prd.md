@@ -23,20 +23,17 @@ their own todos; there is no administrative or shared view.
 ## User Stories
 
 1. As a user, I want to sign in through single sign-on, so that I have a
- private, secure account without managing a separate password for this app.
+private, secure account without managing a separate password for this app.
 2. As a user, I want to add a todo item with a title and an optional due
- date, so that I can capture a task I need to do.
+date, so that I can capture a task I need to do.
 3. As a user, I want to see the list of my todo items, so that I can review
- what is outstanding and what is already done.
+what is outstanding and what is already done.
 4. As a user, I want to mark a todo item as done or not done, so that I can
- track my progress.
+track my progress.
 5. As a user, I want to edit a todo item's title or due date, so that I can
- correct or update it as things change.
+correct or update it as things change.
 6. As a user, I want to delete a todo item, so that I can remove a task I no
- longer need to track.
-7. As a user, I want to filter or sort my todo list (e.g. by completion
- status or due date), so that I can focus on what matters right now.
- *assumed*
+longer need to track.
 
 ## Product Decisions
 
@@ -49,7 +46,7 @@ items. There is no sharing or collaboration between users.
 - There is no Administrator actor or account-management surface in this
 product; account lifecycle is handled by the platform's SSO.
 - No third-party services (e.g. email, notifications, reminders) are used by
-this product. *assumed*
+this product.
 
 ## Out of Scope
 
@@ -58,6 +55,7 @@ this product. *assumed*
 - An administrator role or any cross-user management view.
 - Mobile native apps — this is a web application only.
 - Categories, tags, priority levels, or free-text notes on a todo item.
+- Filtering or sorting the todo list — items are shown in one plain list.
 
 ## Open Questions
 
